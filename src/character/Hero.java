@@ -18,7 +18,7 @@ public class Hero extends Character {
     public static Hero getHero() {
         Hero hero = new Hero(null,30, 0, 1, 1);
         hero.setName(InputService.inputNickname());
-        hero.setHealth(100);
+        hero.setHealth(80);
         WeaponService.initWeapon();
         Weapon takeWeapon = WeaponService.chooseWeapon();
         hero.setRightHand(takeWeapon.getDamage());
